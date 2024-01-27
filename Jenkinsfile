@@ -10,9 +10,9 @@ pipeline {
         }
         stage("deploy") {
             steps{
-                sh "sudo rm -rf /var/www/html/*.html"
-                sh "sudo cp -r /var/www/html"
-                sh "sudo systemctl restart nginx"
+                sh "sudo -S rm -rf /var/www/html/*.html"
+                sh "sudo -S cp -r /var/www/html"
+                sh "sudo -S systemctl restart nginx"
             }
         }
     }
