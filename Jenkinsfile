@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage("checkout") {
             steps {
-                 git branch: 'main' 
+                 git branch: 'master' 
                  url: 'https://github.com/ash2code/snake.js.git'
             }
         }
